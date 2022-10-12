@@ -1,14 +1,20 @@
 <template>
-
+  <div id="app">
+    <welcome_home />
+  
+    <!-- <router-link to="">欢迎页</router-link>
+    <router-view></router-view> -->
+    
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import welcome_home from './view/welcome_home.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    welcome_home
   }
 }
 </script>
