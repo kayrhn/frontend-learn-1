@@ -1,7 +1,7 @@
 <template>
     <div class="box">
         <!-- 头部标题header -->
-        <div class="header">桐庐老干部信息系统</div>
+        <div class="header">通路老干部信息系统</div>
         <!-- 栏目column -->
         <div class="column">
             <div class="column-top"></div>
