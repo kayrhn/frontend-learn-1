@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <welcome_home />
-    <Welcome_home2 />
-    <welcome_sign />
+    、
     <!-- <router-link to="">欢迎页</router-link>
     <router-view></router-view> -->
     
