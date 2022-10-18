@@ -24,9 +24,11 @@
         <div class="footer">
             <div class="footer__title1">活动风采</div>
             <div class="footer__title2">———— ★ ————</div>
-            <div class="footer__img" v-for="(item, index) in footerList" :key="index" >
-                <img class="footer__img__icon" :src="getImgUrl(item.icon)">
-                <span class="footer__img_text">{{ item.title }}</span>
+            <div class="footer__box">
+                <div class="footer__box__img" v-for="(item, index) in footerList" :key="index" >
+                    <img class="footer__box__img__icon" :src="getImgUrl(item.icon)">
+                    <span class="footer__box__img__text">{{ item.title }}</span>
+                </div>
             </div>
         </div>
 
@@ -213,28 +215,30 @@ const footerList = $ref([
             color: #E13131;
             font-size: 48px;
         }
-        &__img {
+        &__box {
             position: absolute;
             top: 184px;
             left: 173px;
             right: 177px;
-            overflow: hidden;
-    
-            &__icon {
-                width: 500px;
-                height: 281px;
-                background: #D8D8D8;
-                border: 1px solid #979797;
-            }
-            &__text {
-                font-size: 22px;
-                font-family: PingFangSC-Semibold, PingFang SC;
-                font-weight: 600;
-                color: #0C0C0C;
-                line-height: 30px;
+            &__img {
+                
+                &__icon {
+                    width: 500px;
+                    height: 281px;
+                    background: #D8D8D8;
+                    border: 1px solid #979797;
+                }
+                &__text {
+                    font-size: 22px;
+                    font-family: PingFangSC-Semibold, PingFang SC;
+                    font-weight: 600;
+                    color: #0C0C0C;
+                    line-height: 30px;
+                    display: block;
+                    margin: 13px auto;
+                }
             }
         }
-
     }
 
 }
